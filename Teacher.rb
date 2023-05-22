@@ -1,10 +1,8 @@
-Class Teacher < Person
-def initialize(id, name, age, parent_permission, specialization)
-  super(id, name, age, parent_permission)
-  @specialization = specialization
-end
+require_relative 'Person'
 
-def can_use_services?
-  true
-end
+class Teacher < Person
+  def initialize(id, name, age, parent_permission, specialization)
+    super(id, name, age, parent_permission)
+    @specialization = specialization
+  end
 end
