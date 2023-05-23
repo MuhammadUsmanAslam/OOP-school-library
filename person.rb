@@ -7,29 +7,12 @@ class Person
     @name = name
   end
 
-  # Setter method for id
-  def add_id(id)
-    @id = id
-  end
+  #  *:name and :age instance variables are the only ones that should be able
+  #  to be modified that's why they are defined as attr_accessors (here both Getters and Setters are defined)
+  attr_accessor :name, :age
 
-  # Setter method for name
-  def add_name=(name)
-    @name = name
-  end
-
-  # Setter method for age
-  def add_age=(age)
-    @age = age
-  end
-
-  # Getter method for id
+  # *:id should only be able to be retrieved so only the Getter is defined
   attr_reader :id
-
-  # Getter method for name
-  attr_reader :name
-
-  # Getter method for age
-  attr_reader :age
 
   # if age is greater than 18 or not
   def of_age?
