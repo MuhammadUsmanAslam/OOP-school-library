@@ -1,5 +1,5 @@
 class Person
-  def initialize(id, age, parent_permission: true, name: 'Unknown')
+  def initialize(id, age, name: 'Unknown', parent_permission: true)
     @id = id
     @id = id
     @age = age
@@ -7,29 +7,29 @@ class Person
     @name = name
   end
 
+  # Setter method for id
   def add_id(id)
     @id = id
   end
 
-  # Get name method
-  def add_name(name)
+  # Setter method for name
+  def add_name=(name)
     @name = name
   end
 
-  # Get age method
-  def add_age(age)
+  # Setter method for age
+  def add_age=(age)
     @age = age
   end
 
-  # name Setter method
-  def name(name)
-    @name = name
-  end
+  # Getter method for id
+  attr_reader :id
 
-  # age Setter method
-  def age(age)
-    @age = age
-  end
+  # Getter method for name
+  attr_reader :name
+
+  # Getter method for age
+  attr_reader :age
 
   # if age is greater than 18 or not
   def of_age?
