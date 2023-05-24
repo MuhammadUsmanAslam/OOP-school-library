@@ -10,8 +10,12 @@
     - [Tech Stack ](#tech-stack-)
     - [Key Features ](#key-features-)
   - [💻 Getting Started ](#-getting-started-)
+    - [Prerequisites](#prerequisites)
     - [Setup](#setup)
+    - [Install](#install)
     - [Usage](#usage)
+    - [Run tests](#run-tests)
+    - [Deployment](#deployment)
   - [👥 Authors ](#-authors-)
   - [🔭 Future Features ](#-future-features-)
   - [🤝 Contributing ](#-contributing-)
@@ -64,6 +68,14 @@
 
 To get a local copy up and running, follow these steps.
 
+### Prerequisites
+
+In order to run this project you need:
+```sh
+ gem install rails
+```
+
+
 ### Setup
 
 Clone this repository to your desired folder:
@@ -72,6 +84,14 @@ Clone this repository to your desired folder:
 git clone https://github.com/MuhammadUsmanAslam/OOP-school-library.git
 ```
 
+### Install
+
+Install this project with:
+
+```sh
+  cd OOP-school-library
+  gem install
+```
 ### Usage
 
 To run the project, execute the following command:
@@ -80,13 +100,21 @@ To run the project, execute the following command:
   ruby person.rb
 ```
 
+### Run tests
+
+Tests are not Implemented yet.
+
+### Deployment
+
+Deployment is not posible because it's not stable application. It just has few classes.
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- AUTHORS -->
 
 ## 👥 Authors <a name="authors"></a>
 
-👤 **Author**
+👤 **Muhammad Usman Aslam**
 
 - GitHub: [@githubhandle](https://github.com/MuhammadUsmanAslam)
 - Twitter: [@twitterhandle](https://twitter.com/M_Usman_Aslam)
