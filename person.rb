@@ -1,10 +1,15 @@
-class Person
-  def initialize(id, age, name: 'Unknown', parent_permission: true)
-    @id = id
-    @id = id
+require_relative './nameable'
+require_relative './decorator'
+require_relative './capitalize_decorator'
+require_relative './trimmer_decorator'
+
+class Person < Nameable
+  def initialize(age, name: 'Unknown', parent_permission: true)
+    @id = Random.rand(1..1000)
     @age = age
     @parent_permission = parent_permission
     @name = name
+    super()
   end
 
   #  *:name and :age instance variables are the only ones that should be able
@@ -13,6 +18,11 @@ class Person
 
   # *:id should only be able to be retrieved so only the Getter is defined
   attr_reader :id
+
+  # correct_name method which retuns name
+  def correct_name
+    @name
+  end
 
   # if age is greater than 18 or not
   def of_age?
@@ -28,3 +38,12 @@ class Person
     false
   end
 end
+
+person = Person.new(22, name: 'maximilianus')
+puts person.correct_name
+
+capitalized_person = CapitalizeDecorator.new(person)
+puts capitalized_person.correct_name
+
+capitalized_trimmed_person = TrimmerDecorator.new(capitalized_person)
+puts capitalized_trimmed_person.correct_name
