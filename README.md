@@ -58,7 +58,10 @@
 
 ### Key Features <a name="key-features"></a>
 
-- **Object Oriented Programming in Ruby**
+- [ ] **Object Oriented Programming in Ruby**
+- [ ] **Decorator class**
+- [ ] **CapitalizeDecorator class**
+- [ ] **CapitalizeDecorator class**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -126,9 +129,9 @@ Deployment is not posible because it's not stable application. It just has few c
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **Decorator class**
-- [ ] **CapitalizeDecorator class**
-- [ ] **CapitalizeDecorator class**
+- [ ] **Classroom class**
+- [ ] **Book class**
+- [ ] **Rental class**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
