@@ -21,17 +21,17 @@ def create_person(app)
   age = gets.chomp.to_i
   puts 'name:-'
   name = gets.chomp
-  puts 'Has parent permission?[Y/N]'
-  val = gets.chomp
-  parent_permission = false if %w[N n NO no No].include?(val)
 
   case option.to_i
   when 1
+    puts 'Has parent permission?[Y/N]'
+    val = gets.chomp
+    parent_permission = false if %w[N n NO no No].include?(val)
     app.create_student(age, name, parent_permission)
   when 2
     puts 'specialization:-'
     specialization = gets.chomp
-    app.create_teacher(age, specialization, name, parent_permission)
+    app.create_teacher(age, specialization, name)
   else
     puts 'Invalid input ):'
   end
