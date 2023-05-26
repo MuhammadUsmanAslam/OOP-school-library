@@ -18,5 +18,5 @@ class Student < Person
   end
 end
 
-person_usman = Person.new(23, parent_permission: true, name: 'Usman')
-puts person_usman.play_hooky
+# person_usman = Person.new(23, parent_permission: true, name: 'Usman')
+# puts person_usman.play_hooky
