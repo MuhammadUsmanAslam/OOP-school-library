@@ -1,7 +1,8 @@
 require_relative './app'
 
+puts 'Welcome to the School Library App!'
+
 def run_option
-  puts 'Welcome to the School Library App!'
   puts 'Please choose an option by entering a number:'
   puts '1 - List all books.'
   puts '2 - List all people'

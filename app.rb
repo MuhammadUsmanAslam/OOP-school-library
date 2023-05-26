@@ -1,8 +1,8 @@
 require_relative './teacher'
 require_relative './student'
+require_relative './person'
 require_relative './rental'
 require_relative './book'
-require_relative './person'
 
 class App
   def initialize
@@ -20,7 +20,7 @@ class App
     end
   end
 
-  def create_teacher(age, specialization, parent_permission, name)
+  def create_teacher(age, specialization, name, parent_permission)
     @peoples << Teacher.new(age, specialization, parent_permission: parent_permission, name: name)
   end
 
@@ -30,9 +30,9 @@ class App
 
   def create_book
     puts 'Title:'
-    title = gets.chomp
+    title = gets.chomp.to_s
     puts 'Author:'
-    author = gets.chomp
+    author = gets.chomp.to_s
     @books << Book.new(title, author)
   end
 
