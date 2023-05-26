@@ -8,6 +8,7 @@ class App
   def initialize
     @books = []
     @peoples = []
+    @rentals = []
   end
 
   def list_books
@@ -47,16 +48,14 @@ class App
     person_index = gets.chomp.to_i
     puts 'Date:-'
     date = gets.chomp
-    Rental.new(@books[book_index], @peoples[person_index], date)
+    @rentals << Rental.new(@books[book_index], date, @peoples[person_index])
   end
 
   def list_person_rentals(person_id)
     @peoples.each do |person|
-      next unless person.id == person_id
-
-      puts 'Rentals:-'
-      person.rentals.each do |rental|
-        puts "Date #{rental.date}, Book #{rental.book.title} by #{rental.book.author}"
+      if person.id == person_id
+        puts 'Rentals:-'
+        @rentals.each { |rental| puts "Date #{rental.date}, Book #{rental.book.title} by #{rental.book.author}" }
       end
     end
   end
